@@ -23,5 +23,6 @@ Sqitch
 **A décrire dans votre fichier `env.js`**
 
 - PORT => le port
+- DATABASE_URL => 
 
 
