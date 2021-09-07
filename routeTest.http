@@ -1,0 +1,14 @@
+@baseUrl=http://localhost:3500/v1
+@host=http://localhost:3500
+
+### Get all categories
+
+GET {{baseUrl}}/
+
+### Get all hints given
+
+GET {{baseUrl}}/hints
+
+### Get one random hint from a specific category
+
+GET {{baseUrl}}/hint/category/fds
