@@ -3,7 +3,6 @@ const Hint = require('./../models/hint');
 const hintController = {
 
     getOneHintFromCategory : async (req,res) => {
-        console.log("ici");
         try {
             const hint = await Hint.randomFromCategory(parseInt(req.params.category_id, 10));
             if(hint){

@@ -6,18 +6,16 @@ const categoryController = {
         try {
             const categories = await Category.findAll();
             if(categories.length === 0){
-                res.json("Il n'y a aucune catégorie à afficher");
+                res.status(204).render('allCategories', { message : "Il n'y a aucune catégorie à afficher"});
             } else {
-                res.json(categories);
+                res.render('allCategories', { categories });
             }
         } catch (error) {
             console.error(error);
-            // todo add status
-            res.json(error.message);
+            res.status(500).render('error', {error : error.message})
         }
     }
 }
 
 module.exports = categoryController;
-
 

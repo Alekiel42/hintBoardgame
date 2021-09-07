@@ -1,0 +1,10 @@
+extends layout.pug 
+
+block append content 
+    div(id="categories_list")
+        h3 Test page 
+            each category in categories
+                div
+                    //- probleme avec v1
+                    a(href='/v1/hint/category/' + category.id)
+                        span=category.label
