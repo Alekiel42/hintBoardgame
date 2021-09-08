@@ -11,4 +11,6 @@ GET {{baseUrl}}/hints
 
 ### Get one random hint from a specific category
 
-GET {{baseUrl}}/hint/category/fds
+GET {{baseUrl}}/hint/category/1
+
+
