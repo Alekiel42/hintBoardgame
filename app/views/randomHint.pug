@@ -1,0 +1,27 @@
+extends layout.pug 
+
+block append content 
+    div(class="tiles")            
+        //- if content null / => affiche gérer la manip avec JS DOM
+        if hint.content 
+            //- centrer txt
+            div(class="tiles_item")= hint.content 
+        if hint.picture 
+            div(class="tiles_item")
+                //- centrer image
+                img(src='/images/tiles/' + hint.picture)
+        if hint.sound 
+            //- lecteur de son   //- hint.sound + gérer le type en BDD ? 
+            div(class="tiles_item")
+                audio(controls='', autoplay='')
+                    source(src='/sounds/' + hint.sound, type='audio/mpeg')
+
+
+    div(class="buttons")
+        div(class="buttons_item")
+            a(href="/v1/")
+                img(src="https://img.icons8.com/emoji/50/000000/flashlight-emoji.png")
+        div(class="buttons_item")
+            a(href="/v1/hints/")
+                img(src="https://img.icons8.com/emoji/50/000000/flashlight-emoji.png")
+

@@ -6,13 +6,15 @@ const hintController = {
         try {
             const hint = await Hint.randomFromCategory(parseInt(req.params.category_id, 10));
             if(hint){
-                res.status(201).json(hint);
+                //todo changer hint_given en true 
+                res.status(201).render('randomHint', { hint });
             } else {
-                res.status(204).json("Il n'y a pas d'indices disponibles dans cette catégorie");
+                // todo template error ou randomhit ? 
+                res.status(204).render('error', { message: "Il n'y a pas d'indices disponibles dans cette catégorie" });
             }
         } catch (error) {
             console.error("Erreur: ", error.message);
-            res.status(500).send(error.message);
+            res.status(500).render('error', { error: error.message });
         }
     },
 

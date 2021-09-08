@@ -6,7 +6,7 @@ const categoryController = {
         try {
             const categories = await Category.findAll();
             if(categories.length === 0){
-                res.status(204).render('allCategories', { message : "Il n'y a aucune catégorie à afficher"});
+                res.status(204).render('error', { message : "Il n'y a aucune catégorie à afficher"});
             } else {
                 res.render('allCategories', { categories });
             }
