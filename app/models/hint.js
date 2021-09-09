@@ -12,7 +12,10 @@ class Hint {
         try {
             const query = `SELECT * FROM hint WHERE hint_given = false AND category_id = $1 ORDER BY random() LIMIT 1;`
             const { rows } = await client.query(query, [category_id]);
+
             if(rows[0]){
+                const queryUpdate = 'UPDATE hint SET hint_given = true WHERE id = $1';  
+                const updated = await client.query(queryUpdate, [rows[0].id]);
                 return new Hint(rows[0]);
             } else {
                 return null;
@@ -34,6 +37,17 @@ class Hint {
         } catch (error) {
             console.error(error);
             throw new Error(error.detail ? error.detail: error.message);
+        }
+    }
+
+    static async changeHintGiven() {
+        try {
+            const query = 'UPDATE hint SET hint_given = false';  
+            await client.query(query);
+            return null;
+        } catch (error) {
+            console.error(error);
+            throw new Error(error.detail ? error.detail : error.message);
         }
     }
 

@@ -32,6 +32,16 @@ const hintController = {
             console.error("Erreur: ", error.message);
             res.status(500).render('error', { error: error.message });
         }
+    },
+
+    resetGame : async (_, res)=> {
+        try {
+            await Hint.changeHintGiven();
+            res.redirect('/v1/'); //todo verfi si redirect ok ou s'il faut v1
+        } catch (error) {
+            console.error("Erreur: ", error.message);
+            res.status(500).render('error', { error: error.message });
+        }
     }
 }
 

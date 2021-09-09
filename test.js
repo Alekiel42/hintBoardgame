@@ -1,4 +1,4 @@
-require('dotenv').config(); //todo a enlever
+require('dotenv').config(); 
 
 const Category = require('./app/models/category');
 const Hint = require('./app/models/hint');
