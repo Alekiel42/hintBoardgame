@@ -1,7 +1,7 @@
 doctype html
 html
     head
-        title Titre à changer dans layout
+        title= title
         link(rel="stylesheet" href="/css/reset.css")
         link(rel="stylesheet" href="/css/style.css")
         link(rel="preconnect" href="https://fonts.googleapis.com")
@@ -9,10 +9,20 @@ html
         link(href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap" rel="stylesheet")
 
     body
-        div(id="container")
+        div
             header
                 div(class="reset")
-                    a(href="/v1/resetGame") Fin de la partie    
+                    a(href="/v1/resetGame")    
+                        img(src="https://img.icons8.com/flat-round/64/000000/recurring-appointment.png" alt="bouton reset du jeu") 
                 img(src="/images/logo.jpg")
             main                          
                 block content
+            div(class="buttons")
+                div(class="buttons_item")
+                    a(href="/v1/hints/")
+                        img(src="https://img.icons8.com/external-vitaliy-gorbachev-fill-vitaly-gorbachev/60/ffffff/external-flashlight-camping-vitaliy-gorbachev-fill-vitaly-gorbachev.png" alt="Picto Lampe Torche pour avoir la liste des indices")
+                //- condition si c'est page acceuil pas afficher ? 
+                div(class="buttons_item")
+                    a(href="/v1/")
+                        img(src="https://img.icons8.com/ios-filled/50/ffffff/action.png" alt="Picto Main pour retourner à la page des actions")
+       

@@ -2,14 +2,11 @@ extends partials/layout.pug
 
 block append content 
     div(class="categories")
+        if categories
             each category in categories
                 div(class="categories_item")
                     a(href='/v1/hint/category/' + category.id)
                         span=category.label
-    div(class="buttons")
-        div(class="buttons_item")
-            a(href="/v1/hints/")
-                img(src="https://img.icons8.com/emoji/50/000000/flashlight-emoji.png")
-
-
+        else 
+            div=message
 

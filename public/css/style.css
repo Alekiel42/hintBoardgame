@@ -5,9 +5,14 @@ body {
 }
 
 .reset{
-    font-size: 1rem;
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
+    position: absolute;
+    left: 1em;
+    top: 1em;
+}
+
+.reset img {
+    width: 30px;
+    margin-right: 0.4em;
 }
 
 header{
@@ -40,22 +45,21 @@ header img {
 
 .tiles {
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
     flex-wrap: wrap;
     color: white;
 }
 
 .tiles_item {
-    background: radial-gradient(ellipse at center bottom, #00345f 0%, #0056b8 0%, #001cb8 30%, #0a002c 40%, transparent 80%),
-    radial-gradient(ellipse at center top, #001fac 60%, #0f0daa 8%, #0d0086 25%, #1f205d 62.5%, #0003a1 100%);
+    background-color: #091f3a;    
     padding: 1em;
+    margin: 1em;
     width: 300px;
     height: 300px;
-    border: solid 1px black;
-    -webkit-box-shadow: 18px 19px 10px -15px rgba(0,0,0,0.75); 
-    box-shadow: 18px 19px 10px -15px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 18px 19px 10px -15px rgba(51, 14, 14, 0.75); 
+    box-shadow: 18px 19px 10px -15px rgba(12, 12, 15, 0.75), inset 3px 3px 3px 3px rgb(11, 54, 104), inset -3px -3px 3px 3px rgb(1, 23, 37);
     transform-origin: 0 0;
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
     /* todo webkit ? */
 }
 
@@ -78,14 +82,16 @@ header img {
 }
 
 .buttons_item{
-    background-color: rgb(137, 208, 255);
     height: 5rem;
     width: 5rem;
-    border-radius: 5em;
 }
 
 .buttons_item img {
     width: 60px;
     height: 60px;
+}
+
+.page-404 {
+    color: white;
 }
 

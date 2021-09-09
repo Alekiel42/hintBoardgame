@@ -6,9 +6,9 @@ const categoryController = {
         try {
             const categories = await Category.findAll();
             if(categories.length === 0){
-                res.status(204).render('error', { message : "Il n'y a aucune catégorie à afficher"});
+                res.status(201).render('allCategories', { title : "Les catégories d'action", message : "Oups.... le jeu ne peut pas commencer sans catégorie !"});
             } else {
-                res.render('allCategories', { categories });
+                res.render('allCategories', { title : "Les catégories d'action", categories });
             }
         } catch (error) {
             console.error(error);

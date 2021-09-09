@@ -3,7 +3,7 @@ mixin hints(hint)
         div(class="tiles_item")
             p= hint.content 
     if hint.picture 
-        div(class="tiles_item")
+        div(class="tiles_item tiles_item_picture")
             img(src='/images/tiles/' + hint.picture)
     if hint.sound 
         div(class="tiles_item")

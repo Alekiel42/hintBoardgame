@@ -3,12 +3,12 @@ include mixins/tiles.pug
                   
 block append content
     div(class="tiles")
-        +hints(hint)
+        if hint
+            +hints(hint)
+        else
+            div=message
 
     div(class="buttons")
-        div(class="buttons_item")
-            a(href="/v1/")
-                img(src="https://img.icons8.com/emoji/50/000000/flashlight-emoji.png")
         div(class="buttons_item")
             a(href="/v1/hints/")
                 img(src="https://img.icons8.com/emoji/50/000000/flashlight-emoji.png")
