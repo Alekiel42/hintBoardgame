@@ -10,6 +10,6 @@ router.get('/hints', hintController.getHintsGiven);
 
 router.get('/hint/category/:category_id(\\d+)', hintController.getOneHintFromCategory);
 
-router.use((_, response) => response.status(404).json('Page non existante'));
+router.use((_, res) => res.status(404).render('page404', { message : 'Page non existante'}));
 
 module.exports = router;

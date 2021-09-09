@@ -21,13 +21,16 @@ const hintController = {
     getHintsGiven : async (_, res) => {
         try {
             const hints = await Hint.findHintsGiven();
-            if(!hints){
-                res.status(204).json("Aucun indice n'a été récupéré")
-            } 
-            res.status(201).json(hints);
+            if(hints){
+                res.status(201).render('hintsGiven', { hints });
+            } else {
+                res.status(204).render('hintsGiven', { message: "Il n'y a pas d'indices disponibles dans cette catégorie" });
+            }
+            // todo template error ou randomhit ? 
+
         } catch (error) {
             console.error("Erreur: ", error.message);
-            res.status(500).send(error.message);
+            res.status(500).render('error', { error: error.message });
         }
     }
 }

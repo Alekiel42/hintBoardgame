@@ -1,0 +1,13 @@
+mixin hints(hint)
+    if hint.content 
+        div(class="tiles_item")
+            p= hint.content 
+    if hint.picture 
+        div(class="tiles_item")
+            img(src='/images/tiles/' + hint.picture)
+    if hint.sound 
+        div(class="tiles_item")
+            audio(preload="auto", autobuffer, controls)
+                //- son wav ou avec variable? 
+                source(src='/sounds/' + hint.sound)
+
