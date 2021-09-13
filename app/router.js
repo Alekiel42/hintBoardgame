@@ -4,8 +4,6 @@ const hintController = require('./controllers/hintController');
 
 const router = Router();
 
-router.get('/test', categoryController.test);
-
 router.get('/', categoryController.getAllCategories);
 
 router.get('/hints', hintController.getHintsGiven);

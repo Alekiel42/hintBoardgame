@@ -2,10 +2,6 @@ const Category = require('./../models/category');
 
 const categoryController = {
 
-    test: async (req, res) => {
-        res.status(200).send({message : "aaa"})
-    },
-
     getAllCategories : async (_, res) => {
         try {
             const categories = await Category.findAll();

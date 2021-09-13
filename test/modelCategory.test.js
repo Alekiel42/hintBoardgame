@@ -22,10 +22,7 @@ var categoriesSchema = {
 
 
 describe('Test findAll() du model Category', () => {
-
-
     it('shoud return a array', async () => {
-        console.log(await Category.findAll());
         expect(await Category.findAll()).to.be.a('array');
     });
 
