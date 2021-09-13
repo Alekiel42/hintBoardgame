@@ -11,15 +11,19 @@ class Hint {
     static async randomFromCategory(category_id) {
         try {
             //todo facto
-            const query = `SELECT * FROM hint
-                            JOIN picto ON hint.picto_id = picto.id 
+            const query = `SELECT hint.id, hint.content, hint.picture, hint.sound, hint.hint_given, hint.category_id, picto.icon8_url
+                             FROM hint
+                            JOIN picto ON (hint.picto_id = picto.id) 
                             WHERE hint_given = false AND category_id = $1 
                             ORDER BY random() 
                             LIMIT 1;`
             const { rows } = await client.query(query, [category_id]);
+            console.log("id", rows[0].id, "picto id", rows[0].picto_id)
 
             if(rows[0]){
-                const queryUpdate = 'UPDATE hint SET hint_given = true WHERE id = $1';  
+                console.log("dans model", rows[0])
+                const queryUpdate = 'UPDATE hint SET hint_given = true WHERE id = $1'; 
+                console.log('id a updated', rows[0].id) 
                 const updated = await client.query(queryUpdate, [rows[0].id]);
                 return new Hint(rows[0]);
             } else {
