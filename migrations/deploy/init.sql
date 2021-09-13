@@ -9,7 +9,7 @@ CREATE TABLE category (
 
 CREATE TABLE hint (
     id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    content TEXT, 
+    content VARCHAR(102), 
     picture TEXT, 
     sound TEXT, 
     hint_given BOOLEAN NOT NULL DEFAULT false,
