@@ -10,7 +10,12 @@ class Hint {
 
     static async randomFromCategory(category_id) {
         try {
-            const query = `SELECT * FROM hint WHERE hint_given = false AND category_id = $1 ORDER BY random() LIMIT 1;`
+            //todo facto
+            const query = `SELECT * FROM hint
+                            JOIN picto ON hint.picto_id = picto.id 
+                            WHERE hint_given = false AND category_id = $1 
+                            ORDER BY random() 
+                            LIMIT 1;`
             const { rows } = await client.query(query, [category_id]);
 
             if(rows[0]){
@@ -28,7 +33,7 @@ class Hint {
 
     static async findHintsGiven(){
         try {
-            const query = `SELECT * FROM hint WHERE hint_given = true`;
+            const query = `SELECT * FROM hint JOIN picto ON hint.picto_id = picto.id WHERE hint_given = true`;
             const { rows } = await client.query(query);
             if(rows.length === 0) {
                 return null;

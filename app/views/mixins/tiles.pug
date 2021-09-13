@@ -1,12 +1,15 @@
 mixin hints(hint)
     if hint.content 
         div(class="tiles__item")
+            img(class="tiles__item__picto"  src=hint.icon8_url)
             p= hint.content 
     if hint.picture 
         div(class="tiles__item")
+            img(class="tiles__item__picto" src=hint.icon8_url)
             img(src='/images/tiles/' + hint.picture)
     if hint.sound 
         div(class="tiles__item")
+            img(class="tiles__item__picto"  src=hint.icon8_url)
             audio(preload="auto", autobuffer, controls)
                 source(src='/sounds/' + hint.sound)
 

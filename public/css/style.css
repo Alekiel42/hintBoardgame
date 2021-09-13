@@ -52,6 +52,7 @@ header img {
 }
 
 .tiles__item {
+    position: relative;
     background-color: #091f3a;    
     padding: 1em;
     margin: 1em;
@@ -62,6 +63,16 @@ header img {
     transform-origin: 0 0;
     transform: rotate(-8deg);
     /* todo webkit ? */
+}
+
+.tiles__item__picto {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    background-color: white;
 }
 
 .tiles__item audio {

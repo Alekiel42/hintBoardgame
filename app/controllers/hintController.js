@@ -5,6 +5,7 @@ const hintController = {
     getOneHintFromCategory : async (req,res) => {
         try {
             const hint = await Hint.randomFromCategory(parseInt(req.params.category_id, 10));
+            console.log(hint);
             if(hint){
                 res.status(201).render('randomHint', { title : "Un nouvel indice !", hint });
             } else {
