@@ -1,0 +1,5 @@
+PICTO: icon8_url, nom
+est rattaché à, 11 INDICE, 0N PICTO
+INDICE: contenu, image, son, indice donnée
+appartient à, 11 INDICE, 0N CATÉGORIE
+CATÉGORIE: nom

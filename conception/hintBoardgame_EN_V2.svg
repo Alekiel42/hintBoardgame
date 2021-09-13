@@ -1,0 +1,79 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
+"http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+
+<svg width="544" height="120" view_box="0 0 544 120"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 le Sun, 12 Sep 2021 22:58:51</desc>
+
+<rect id="frame" x="0" y="0" width="544" height="120" fill="#ffffbf" stroke="none" stroke-width="0"/>
+
+<!-- Association is attached to -->
+<line x1="277" y1="60" x2="158" y2="60" stroke="#66c2a5" stroke-width="2"/>
+<text x="213" y="77.0" fill="#d53e4f" font-family="Verdana" font-size="12">1,1</text>
+<line x1="43" y1="60" x2="158" y2="60" stroke="#66c2a5" stroke-width="2"/>
+<text x="82" y="77.0" fill="#d53e4f" font-family="Verdana" font-size="12">0,N</text>
+<g id="association-is attached to">
+	<path d="M 193 35 a 14 14 90 0 1 14 14 V 60 h -98 V 49 a 14 14 90 0 1 14 -14" fill="#abdda4" stroke="#abdda4" stroke-width="0"/>
+	<path d="M 207 60.0 v 11 a 14 14 90 0 1 -14 14 H 123 a 14 14 90 0 1 -14 -14 V 60.0 H 98" fill="#e6f598" stroke="#e6f598" stroke-width="0"/>
+	<rect x="109" y="35" width="98" height="50" fill="none" rx="14" stroke="#66c2a5" stroke-width="2"/>
+	<line x1="109" y1="60" x2="207" y2="60" stroke="#66c2a5" stroke-width="1"/>
+	<text x="116" y="52.7" fill="#000000" font-family="Verdana" font-size="12">is attached to</text>
+</g>
+
+<!-- Association belongs to -->
+<line x1="277" y1="60" x2="386" y2="60" stroke="#66c2a5" stroke-width="2"/>
+<text x="320" y="77.0" fill="#d53e4f" font-family="Verdana" font-size="12">1,1</text>
+<line x1="496" y1="60" x2="386" y2="60" stroke="#66c2a5" stroke-width="2"/>
+<text x="430" y="77.0" fill="#d53e4f" font-family="Verdana" font-size="12">1,N</text>
+<g id="association-belongs to">
+	<path d="M 411 35 a 14 14 90 0 1 14 14 V 60 h -78 V 49 a 14 14 90 0 1 14 -14" fill="#abdda4" stroke="#abdda4" stroke-width="0"/>
+	<path d="M 425 60.0 v 11 a 14 14 90 0 1 -14 14 H 361 a 14 14 90 0 1 -14 -14 V 60.0 H 78" fill="#e6f598" stroke="#e6f598" stroke-width="0"/>
+	<rect x="347" y="35" width="78" height="50" fill="none" rx="14" stroke="#66c2a5" stroke-width="2"/>
+	<line x1="347" y1="60" x2="425" y2="60" stroke="#66c2a5" stroke-width="1"/>
+	<text x="354" y="52.7" fill="#000000" font-family="Verdana" font-size="12">belongs to</text>
+</g>
+
+<!-- Entity CATEGORY -->
+<g id="entity-CATEGORY">
+	<g id="frame-CATEGORY">
+		<rect x="457" y="35" width="78" height="25" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+		<rect x="457" y="60.0" width="78" height="25" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+		<rect x="457" y="35" width="78" height="50" fill="none" stroke="#f46d43" stroke-width="2"/>
+		<line x1="457" y1="60" x2="535" y2="60" stroke="#f46d43" stroke-width="1"/>
+	</g>
+	<text x="462" y="52.7" fill="#000000" font-family="Verdana" font-size="12">CATEGORY</text>
+	<text x="462" y="77.8" fill="#000000" font-family="Verdana" font-size="12">label</text>
+	<line x1="462" y1="80" x2="491" y2="80" stroke="#000000" stroke-width="1"/>
+</g>
+
+<!-- Entity PICTO -->
+<g id="entity-PICTO">
+	<g id="frame-PICTO">
+		<rect x="9" y="26" width="68" height="25" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+		<rect x="9" y="51.0" width="68" height="43" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+		<rect x="9" y="26" width="68" height="68" fill="none" stroke="#f46d43" stroke-width="2"/>
+		<line x1="9" y1="51" x2="77" y2="51" stroke="#f46d43" stroke-width="1"/>
+	</g>
+	<text x="23" y="43.7" fill="#000000" font-family="Verdana" font-size="12">PICTO</text>
+	<text x="14" y="68.8" fill="#000000" font-family="Verdana" font-size="12">icon8_url</text>
+	<line x1="14" y1="71" x2="71" y2="71" stroke="#000000" stroke-width="1"/>
+	<text x="14" y="85.8" fill="#000000" font-family="Verdana" font-size="12">label</text>
+</g>
+
+<!-- Entity HINT -->
+<g id="entity-HINT">
+	<g id="frame-HINT">
+		<rect x="239" y="9" width="76" height="25" fill="#fdae61" stroke="#fdae61" stroke-width="0"/>
+		<rect x="239" y="34.0" width="76" height="77" fill="#fee08b" stroke="#fee08b" stroke-width="0"/>
+		<rect x="239" y="9" width="76" height="102" fill="none" stroke="#f46d43" stroke-width="2"/>
+		<line x1="239" y1="34" x2="315" y2="34" stroke="#f46d43" stroke-width="1"/>
+	</g>
+	<text x="261" y="26.7" fill="#000000" font-family="Verdana" font-size="12">HINT</text>
+	<text x="244" y="51.7" fill="#000000" font-family="Verdana" font-size="12">content</text>
+	<line x1="244" y1="54" x2="290" y2="54" stroke="#000000" stroke-width="1"/>
+	<text x="244" y="68.8" fill="#000000" font-family="Verdana" font-size="12">picture</text>
+	<text x="244" y="85.8" fill="#000000" font-family="Verdana" font-size="12">sound</text>
+	<text x="244" y="102.8" fill="#000000" font-family="Verdana" font-size="12">hint_given</text>
+</g>
+</svg>

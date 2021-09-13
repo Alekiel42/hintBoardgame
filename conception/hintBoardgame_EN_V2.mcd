@@ -1,0 +1,5 @@
+PICTO: icon8_url, label
+is attached to, 11 HINT, 0N PICTO
+HINT: content, picture, sound, hint_given
+belongs to, 11 HINT, 1N CATEGORY
+CATEGORY: label
