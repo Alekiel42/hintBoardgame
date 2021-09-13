@@ -2,7 +2,7 @@ extends partials/layout.pug
 include mixins/tiles.pug
 
 block append content 
-    div(class="content-center")
+    div(class="tiles")
         if hints 
             each hint in hints 
                 +hints(hint)

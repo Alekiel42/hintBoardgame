@@ -4,7 +4,7 @@ block append content
     div(class="categories")
         if categories
             each category in categories
-                div(class="categories_item")
+                div(class="categories__item")
                     a(href='/v1/hint/category/' + category.id)
                         span=category.label
         else 
