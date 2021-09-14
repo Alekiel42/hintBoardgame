@@ -22,6 +22,12 @@ Le joueur peut reseter le jeu
 
 ## Stack Technique (prérequis)
 
+![](https://img.shields.io/badge/-Node.js-05122A?style=for-the-badge&logo=Node.js) 
+![](https://img.shields.io/badge/-PostgreSQL-05122A?style=for-the-badge&logo=PostgreSQL)
+![](https://img.shields.io/badge/-Git-05122A?style=for-the-badge&logo=Git)
+![](https://img.shields.io/badge/-Sqitch-05122A?style=for-the-badge&logo=Sqitch)
+
+
 Git : https://git-scm.com/downloads
 
 PostgreSQL (v12 ou supérieure) : https://www.postgresql.org/download/

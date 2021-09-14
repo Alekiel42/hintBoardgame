@@ -104,3 +104,14 @@ header img {
 }
 
 
+.copyright {
+    position: absolute;
+    bottom: 0px;
+    left: 10px;
+}
+
+.copyright, .copyright > a {
+    color: grey;
+    font-size: 1rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
