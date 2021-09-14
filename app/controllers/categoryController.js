@@ -6,13 +6,19 @@ const categoryController = {
         try {
             const categories = await Category.findAll();
             if(categories.length === 0){
-                res.status(201).render('allCategories', { title : "Les catégories d'action", message : "Oups.... le jeu ne peut pas commencer sans catégorie !"});
+                res
+                  .status(201)
+                  .render("allCategories", {
+                    title: "Les catégories d'action",
+                    message:
+                      "Oups.... le jeu ne peut pas commencer sans catégorie !",
+                  });
             } else {
                 res.render('allCategories', { title : "Les catégories d'action", categories });
             }
         } catch (error) {
             console.error(error);
-            res.status(500).render('error', {error : error.message})
+                    res.status(500).render('error', {error : error.message})
         }
     }
 }
