@@ -69,10 +69,12 @@ npm install
 
 ## Détails des routes
 
-- `/` : affiche toutes les catégories
-- `/hint/category/:category_id` : affiche un indice aléatoire provenant de la catégorie sélectionnée
-- `/hints` : affiche tous les indices que le joueur a déjà reçus
-- `/resetGame` : reset le jeu 
+|Routes|Methode|Controllers|Action|
+|--|--|--|--|
+| `/` | GET | categoryController.getAllCategories | Affiche toutes les catégories |
+| `/hint/category/:category_id` | GET |  hintController.getOneHintFromCategory | affiche un indice de manière aléatoire en fonction de la catégorie |
+| `hints` | GET | hintController.getHintsGiven | affiche tous les indices déjà reçus |
+| `/resetGame` | GET | hintController.resetGame | reset le jeu |
 
 ## Fichier Seed 
 

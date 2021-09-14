@@ -68,10 +68,12 @@ npm install
 
 ## Route details
 
-- `/` : show all categories
-- `/hint/category/:category_id` : displays a random index from the selected category
-- hints` : displays all hints the player has already received
-- `/resetGame` : reset the game 
+|Routes|Method|Controllers|Action|
+|--|--|--|--|
+| `/` | GET | categoryController.getAllCategories | show all categories |
+| `/hint/category/:category_id` | GET |  hintController.getOneHintFromCategory | displays a random index from the selected category |
+| `hints` | GET | hintController.getHintsGiven | displays all hints the player has already received |
+| `/resetGame` | GET | hintController.resetGame | reset the game |
 
 ## Seed file 
 
