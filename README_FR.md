@@ -1,5 +1,10 @@
 # API "Play for a Hint"
 
+
+[README English version](./README.md)
+
+[Consultez le Changelog du projet](./CHANGELOG.md)
+
 ## Il était une fois... 
 
 Il s'agit d'un petit projet perso que j'ai mis en place pour l'anniversaire de ma compagne. Passionnée par les jeux de société, j'ai créé cette API qui lui fournit des indices concernant l'endroit où j'ai caché son cadeau. Pour recevoir un indice, elle devait réaliser certaines "actions" en jouant à son jeu de société préféré du moment : Subterra. 
@@ -53,21 +58,24 @@ npm install
 
 **A décrire dans votre fichier `.env`**
 
-- PORT => le port de votre serveur. Si vous lancez l'API sur votre machine hôte, connectez-vous ensuite à `http://localhost:<PORT>`
-- DATABASE_URL => Url de connexion à votre base de données. Le nom de cette variable d'environnement permet un déploiement sur Heroku qui utilise aussi DATABASE_URL
+- `PORT` => le port de votre serveur. Si vous lancez l'API sur votre machine hôte, connectez-vous ensuite à `http://localhost:<PORT>`
+- `DATABASE_URL` => Url de connexion à votre base de données. Le nom de cette variable d'environnement permet un déploiement sur Heroku qui utilise aussi DATABASE_URL
 
 ## Détails des routes
 
-url
+- `/` : affiche toutes les catégories
+- `/hint/category/:category_id` : affiche un indice aléatoire provenant de la catégorie sélectionnée
+- `/hints` : affiche tous les indices que le joueur a déjà reçus
+- `/resetGame` : reset le jeu 
 
 ## Fichier Seed 
 
 Les informations présentes sont fictives, inspirées du jeu que j'ai organisé dans le cadre de ce projet. 
 
-Pour la table Hint 
+**Pour la table Hint**
 - content : texte pour donner un indice texte
 - picture : il s'agit du nom du fichier qui se trouvera dans le dossier `public/tiles/images`. Ex: `chat.jpg`
 - sound : il s'agit du nom du fichier qui se trouvera dans le dossier `public/sounds`. Ex: `miaulement.mp4`
 
-Pour la table Picto 
+**Pour la table Picto** 
 - icon8_url : lien externe qui pointe directement vers le picto que vous souhaitez utiliser. Dans mon cas j'ai utilisé le site : https://icones8.fr/

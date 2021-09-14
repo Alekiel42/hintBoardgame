@@ -18,7 +18,6 @@ class Hint {
                             ORDER BY random() 
                             LIMIT 1;`
             const { rows } = await client.query(query, [category_id]);
-            console.log("id", rows[0].id, "picto id", rows[0].picto_id)
 
             if(rows[0]){
                 console.log("dans model", rows[0])
