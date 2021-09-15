@@ -55,6 +55,18 @@ class Hint {
       throw new Error(error.detail ? error.detail : error.message);
     }
   }
+
+  // delete all hints
+  static async deleteHintsFromCategory(category_id) {
+    try {
+      const query = "DELETE FROM hint WHERE category_id = 4";
+      await client.query(query, [category_id]);
+      return null;
+    } catch (error) {
+      console.error(error);
+      throw new Error(error.detail ? error.detail : error.message);
+    }
+  }
 }
 
 module.exports = Hint;

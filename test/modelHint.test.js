@@ -2,7 +2,7 @@ const chai = require('chai');
 const expect = chai.expect;
 chai.use(require('chai-json-schema'));
 
-const Hint = require('./../app/models/hint');
+const Hint = require('../app/models/hint');
 
 var hintSchema = {
     title: 'Schema of a hint',

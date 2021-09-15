@@ -4,10 +4,6 @@ const should = chai.should();
 const chaitHttp = require('chai-http');
 const server = require('../index')
 
-var chaiWebdriver = require('chai-webdriver');
-chai.use(chaiWebdriver(driver));
-
-
 const { getAllCatgories } = require('../app/controllers/categoryController');
 var urlBase = "/v1";
 

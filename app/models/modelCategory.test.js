@@ -2,7 +2,7 @@ const chai = require('chai');
 const expect = chai.expect;
 chai.use(require('chai-json-schema'));
 
-const Category = require('./../app/models/category');
+const Category = require('./category');
 
 var categoriesSchema = {
     title: 'List of Categories',
