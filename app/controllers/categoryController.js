@@ -14,8 +14,8 @@ const categoryController = {
                       "Oups.... le jeu ne peut pas commencer sans catégorie !",
                   });
             } else {
-                res.render('allCategories', { title : "Les catégories d'action", categories });
-            }
+                res.status(201).render('allCategories', { title : "Les catégories d'action", categories });
+            }   
         } catch (error) {
             console.error(error);
                     res.status(500).render('error', {error : error.message})

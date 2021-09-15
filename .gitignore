@@ -2,3 +2,4 @@ node_modules
 notes
 sqitch.conf
 .env
+test/categoryController.test.js
