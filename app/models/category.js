@@ -9,7 +9,7 @@ class Category {
 
   static async findAll() {
     try {
-      const { rows } = await client.query("SELECT * FROM Category");
+      const { rows } = await client.query("SELECT * FROM category");
       return rows.map((row) => new Category(row));
     } catch (error) {
       console.error(error);
