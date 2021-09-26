@@ -19,7 +19,6 @@ class Hint {
 
       if (rows[0]) {
         const queryUpdate = "UPDATE hint SET hint_given = true WHERE id = $1";
-        console.log("id a updated", rows[0].id);
         const updated = await client.query(queryUpdate, [rows[0].id]);
         return new Hint(rows[0]);
       } else {
