@@ -56,7 +56,7 @@ xmlns:link="http://www.w3.org/1999/xlink">\n\n<desc>Généré par Mocodo 2.3.7 l
 		<line x1="9" y1="51" x2="77" y2="51" stroke="#f46d43" stroke-width="1"/>
 	</g>
 	<text x="23" y="43.7" fill="#000000" font-family="Verdana" font-size="12">PICTO</text>
-	<text x="14" y="68.8" fill="#000000" font-family="Verdana" font-size="12">icon8_url</text>
+	<text x="14" y="68.8" fill="#000000" font-family="Verdana" font-size="12">picto</text>
 	<line x1="14" y1="71" x2="71" y2="71" stroke="#000000" stroke-width="1"/>
 	<text x="14" y="85.8" fill="#000000" font-family="Verdana" font-size="12">label</text>
 </g>

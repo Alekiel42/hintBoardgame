@@ -85,4 +85,4 @@ The information here is fictitious, inspired by the game I organized for this pr
 - sound : this is the name of the file that will be in the `public/sounds` folder. Ex: `miaulement.mp4`
 
 **For the Picto table** 
-- icon8_url : external link that points directly to the picto you want to use. In my case I used the site: https://icones8.fr/
+- picto : name of the file that is in the `public/picto` folder.

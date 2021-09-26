@@ -7,6 +7,4 @@ ALTER TABLE hint
 
 DROP TABLE picto;
 
-DROP DOMAIN icon8_url_format;
-
 COMMIT;

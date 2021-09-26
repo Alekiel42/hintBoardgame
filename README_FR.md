@@ -86,4 +86,4 @@ Les informations présentes sont fictives, inspirées du jeu que j'ai organisé 
 - sound : il s'agit du nom du fichier qui se trouvera dans le dossier `public/sounds`. Ex: `miaulement.mp4`
 
 **Pour la table Picto** 
-- icon8_url : lien externe qui pointe directement vers le picto que vous souhaitez utiliser. Dans mon cas j'ai utilisé le site : https://icones8.fr/
+- picto : npm du fichier qui se trouve dans le dossier `public/picto`

@@ -6,7 +6,7 @@ INSERT INTO category(label) VALUES
     ('Annihiler Horreur'),
     ('Sortie de spéléo');
 
-INSERT INTO picto(label, icon8_url) VALUES
+INSERT INTO picto(label, picto) VALUES
     ('symbol 1', 'p1.png'),
     ('symbol 2', 'p2.png'),
     ('sympol 3', 'p3.png');

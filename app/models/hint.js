@@ -9,7 +9,7 @@ class Hint {
 
   static async randomFromCategory(category_id) {
     try {
-      const query = `SELECT hint.id, hint.content, hint.picture, hint.sound, hint.hint_given, hint.category_id, picto.icon8_url
+      const query = `SELECT hint.id, hint.content, hint.picture, hint.sound, hint.hint_given, hint.category_id, picto.picto
                             FROM hint
                             JOIN picto ON (hint.picto_id = picto.id) 
                             WHERE hint_given = false AND category_id = $1 
