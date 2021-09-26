@@ -7,9 +7,9 @@ INSERT INTO category(label) VALUES
     ('Sortie de spéléo');
 
 INSERT INTO picto(label, icon8_url) VALUES
-    ('map', 'https://img.icons8.com/external-those-icons-fill-those-icons/24/000000/external-map-maps-and-locations-those-icons-fill-those-icons-1.png'),
-    ('pelle', 'https://img.icons8.com/dotty/80/000000/spade.png'),
-    ('dragon ball', 'https://img.icons8.com/windows/32/000000/son-goku.png');
+    ('symbol 1', 'p1.png'),
+    ('symbol 2', 'p2.png'),
+    ('sympol 3', 'p3.png');
 
 INSERT INTO hint(content, picture, sound, category_id, picto_id) VALUES
     (NULL, 'prisme.png', NULL, 1,1),
